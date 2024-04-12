@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api', tokenRoutes);
+app.use('/', tokenRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
